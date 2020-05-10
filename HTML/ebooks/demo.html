@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Select city</h1>
+    <input type="checkbox" id="hanoi" name="diadiem" value="hanoi" class="address">
+    <label for="hanoi">Hà Nội</label><br>
+    <input type="checkbox" id="haiphong" name="diadiem" value="haiphong" class="address">
+    <label for="haiphong">Hai phong</label><br>
+    <input type="checkbox" id="HoChiMinh" name="diadiem" value="HoChiMinh" class="address">
+    <label for="HoChiMinh">Hồ chí minh</label><br>
+    <input type="checkbox" id="Danang" name="diadiem" value="Danang" class="address">
+    <label for="Danang">Đà nẵng</label><br>
+    <hr />
+    <p>You Select <span id='numberCity'>0</span> city</p>
+
+    <script>
+        var inputs = document.getElementsByClassName("address");
+        var count = 0;
+        for(var item of inputs)
+        {
+            console.log(item);
+            item.addEventListener('click', function () {
+                if (this.checked === true) {
+                    ++count;
+                }
+                else{
+                    --count;
+                }
+                document.getElementById('numberCity').innerText = count;
+            });
+        }    
+
+
+        
+    </script>
+</body>
+
+</html>
