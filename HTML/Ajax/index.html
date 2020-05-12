@@ -1,0 +1,129 @@
+<!-- 
+1. Tạo một REST api server sử dụng json-server
+2. Đọc documentation của json-server và axios, tìm hiểu các method GET, POST, PUT, PATCH, DELETE
+3. Làm các ví dụ sử dụng axios để gửi các request lên json-server để tạo object mới, update 1 object với dữ liệu mới,
+xoá 1 object 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="id" type="text" placeholder="Enter id" />
+    <input id="name" type="text" placeholder="Enter name" />
+    <select id="type">
+        <option value="1">GET</option>
+        <option value="2">POST</option>
+        <option value="3">PUT</option>
+        <option value="4">DELETE</option>
+        <option value="5">PATCH</option>
+    </select>
+    <button id="btnSend">Send</button>
+    <hr />
+    <ul id="ulStudents">
+    </ul>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="text/javascript">
+        var students = [];
+            var url = "http://localhost:3000/students";
+
+            document.getElementById("btnSend").addEventListener("click", function () {
+                var selectItem = document.getElementById("type");
+                var type = selectItem.value;
+                switch (type) {
+                    case '1':
+                        doGet();
+                        break;
+                    case '2':
+                        doPost();
+                        break;
+                    case '3':
+                        doPut();
+                        break;
+                    case '4':
+                        doDelete();
+                        break;
+                    case '5':
+                        doPatch();
+                        break;
+                    default:
+                        doGet();
+                        break
+                }
+            });
+
+            doGet();
+
+            function doGet() {
+                axios.get(url).then(function (response) {
+                    var data = response.data;
+                    students = data;
+                    renderUI();
+                }).catch(function (err) {
+                    console.log(err);
+                });
+            }
+
+            function doPost() {
+                var id = document.getElementById("id").value;
+                var name = document.getElementById("name").value;
+                var student = { "id": id, "name": name };
+
+                axios.post(url, student).then(function (response) {
+                    //doGet();
+                }).catch(function (err) {
+                    console.log(err);
+                });
+            }
+
+            function doPut() {
+                var id = document.getElementById("id").value;
+                var name = document.getElementById("name").value;
+                var student = { "name": name };
+                axios.put(url + '/' + id, student).then(function (response) {
+                    //doGet();
+                }).catch(function (err) {
+                    console.log(err);
+                });
+            }
+
+            function doDelete() {
+                var id = document.getElementById("id").value;
+                var name = document.getElementById("name").value;
+                var student = { "name": name };
+                axios.delete(url + "/" + id).then(function (response) {
+                    //doGet();
+                }).catch(function (err) {
+                    console.log(err);
+                });
+            }
+
+            function doPatch() {
+                var id = document.getElementById("id").value;
+                var name = document.getElementById("name").value;
+                var student = { "name": name };
+                axios.patch(url + '/' + id, student).then(function (response) {
+                    //doGet();
+                }).catch(function (err) {
+                    console.log(err);
+                });
+            }
+            function renderUI() {
+                var uiStudents = document.getElementById("ulStudents");
+                var li = "";
+                for (const student of students) {
+                    li += "<li>" + student.id + '-' + student.name + "</li>";
+                }
+                uiStudents.innerHTML = li;
+            }
+    </script>
+</body>
+
+</html>

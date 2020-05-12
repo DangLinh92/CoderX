@@ -1,0 +1,76 @@
+{
+  "students": [
+    {
+      "name": "mr dang",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "name": "nguyen thi linh"
+    },
+    {
+      "id": 3,
+      "name": "le quang dai"
+    },
+    {
+      "id": 4,
+      "name": "le minh lam ngoc"
+    },
+    {
+      "id": "5",
+      "name": "mr dang"
+    },
+    {
+      "id": "6",
+      "name": "Nguyễn thị hồng mây"
+    },
+    {
+      "id": "7",
+      "name": "Lê Văn Đặng"
+    },
+    {
+      "id": "8",
+      "name": "mr dang"
+    },
+    {
+      "id": "10",
+      "name": "Danglv"
+    },
+    {
+      "id": "9",
+      "name": "Nguyễn thị hồng mây"
+    },
+    {
+      "id": "11",
+      "name": "Nguyễn thị thu linh"
+    },
+    {
+      "id": "12",
+      "name": "Nguyễn thị thu linh"
+    },
+    {
+      "id": "13",
+      "name": "Nguyễn thị hồng mây"
+    },
+    {
+      "id": "14",
+      "name": "mr dang"
+    },
+    {
+      "id": "15",
+      "name": "Lê Văn Đặng"
+    },
+    {
+      "id": "16",
+      "name": "Nguyễn thị thu linh"
+    },
+    {
+      "id": "17",
+      "name": "Lê Văn Đặng"
+    },
+    {
+      "id": "18",
+      "name": "Nguyễn thị thu linh"
+    }
+  ]
+}
