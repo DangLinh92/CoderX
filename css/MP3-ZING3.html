@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <style>
+        .album-square{
+            width: 128px;
+            height: 128px;
+            background-color: #ddd;
+            background-image: url('https://loremflickr.com/320/240');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #fff;
+            font-size: 30px;
+        }
+
+        .album-square .overlay{
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity:0;
+        }
+
+        .album-square .overlay:hover{
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="album-square">
+        <div class="overlay">
+            <i class="fa fa-play-circle"></i>
+        </div>
+    </div>
+</body>
+</html>

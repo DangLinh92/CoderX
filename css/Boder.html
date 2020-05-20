@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+        /*
+        border-width:
+        border-style:
+        border-color:
+
+        shorthand
+        border : 1px solid red;
+
+        border-width: top right bottom left
+        border-width: top left-right bottom
+        border-width: top-bottom left-right
+
+        border-left-width: 1px;
+        ...
+        */
+        body{
+            background-color:yellowgreen;
+        }
+        .list-item {
+            color:navy;
+            font-weight: bold;
+            padding: 16px;
+            margin-bottom: 8px;
+           /* border: 1px solid #494949;*/
+           /* border-left-width: 10px;
+           border-top-width: 0px;
+           border-right-width: 0px;
+           border-bottom-width: 0px; */
+           border-style: solid;
+           border-width: 0 0 0 10px;
+           background-color: thistle;
+
+           /* background: rgb(2,0,36);
+           background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */
+        }
+
+/*
+ background-image : url()
+ background-repeat : repeat-x | repeat-y | no-repeat | repeat*  | ...
+ background-size : % | contain | cover | auto*
+ background-position: x y | center
+ background-attachment: scroll* | fixed
+*/
+        .list-item-pattern{
+            background-image: url("./p1.jpg");
+            background-size: 20%;
+            background-repeat: repeat;
+            height: 300px;
+            background-repeat: repeat-x;
+        }
+
+        .list-item-image{
+            background-image: url(./p3.png);
+            height: 100px;
+            color: #fff;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .list-item-parallax{
+            background-image: url(./p2.jpg);
+            height: 100px;
+            color: #fff;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <ul class="list-item">
+        <p>Text item</p>
+    </ul>
+     <ul class="list-item">
+         <p>Text item</p>
+     </ul>
+     <ul class="list-item">
+         <p>Text item</p>
+     </ul>
+
+     <div class="list-item list-item-pattern">
+         item
+     </div>
+
+     <div class="list-item list-item-image">
+        item
+    </div>
+    <div class="list-item list-item-parallax">
+        item
+    </div>
+
+    <div class="list-item">
+        <i class="fab fa-accessible-icon"></i>
+        item
+    </div>
+    <i class="fab fa-accessible-icon"></i>
+    <div class="list-item">
+        item
+    </div>
+    <div class="list-item">
+        item
+    </div>
+    <div class="list-item">
+        item
+    </div>
+    <div class="list-item">
+        item
+    </div>
+    <div class="list-item">
+        item
+    </div>
+    <div class="list-item">
+        item
+    </div>
+    <div class="list-item">
+        item
+    </div>
+    <div class="list-item">
+        item
+    </div>
+    <button class="mdc-button foo-button">
+        <div class="mdc-button__ripple"></div>
+        <span class="mdc-button__label">Button</span>
+      </button>
+      <span class="material-icons">
+        fingerprint
+        </span>
+        <span class="material-icons">
+            invert_colors
+            </span>
+            <i class="fas fa-adjust"></i>
+            <i class="fas fa-adjust"></i>
+</body>
+</html>

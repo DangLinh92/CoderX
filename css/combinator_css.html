@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .item{
+            color: red;
+        }
+
+        .list .item{
+            color: seagreen;
+        }
+
+        .list>.item{
+            color: silver;
+        }
+
+        .subItem + .item{
+            color: red;
+        }
+
+        .item-2 ~ .item{
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <ul class="list">
+        <li class="item">
+            Item 1
+            <ul class="item-1">
+                <li class="item subItem">sub item1</li>
+                <li class="item">sub item2</li>
+                <li class="item">sub item3</li>
+            </ul>
+        </li>
+        <li class="item item-2">Item 2</li>
+        <li class="item">Item 3</li>
+        <li class="item">Item 4</li>
+        <li>Item 5</li>
+    </ul>
+</body>
+</html>
