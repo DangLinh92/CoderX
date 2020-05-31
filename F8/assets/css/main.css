@@ -402,7 +402,14 @@ HEADER NOTIFICATION
         margin-top: 6px;
     }
     
+    .header__search-input-wrap {
+        flex-grow: 1;
+        height: 100%;
+        position: relative;
+    }
+    
     .header__search-input {
+        width: 100%;
         outline: none;
         height: 100%;
         border: none;
@@ -410,7 +417,10 @@ HEADER NOTIFICATION
         color: var(--text-color);
         padding: 0 8px;
         border-radius: 3px;
-        flex-grow: 1;
+    }
+    
+    .header__search-input:focus~.header__search-history {
+        display: block;
     }
     
     .header__search-select {
@@ -515,4 +525,52 @@ HEADER NOTIFICATION
     
     .header__search-option-item-active i {
         display: inline-block;
+    }
+    
+    .header__search-history {
+        position: absolute;
+        top: calc(100%+2px);
+        left: 0;
+        width: calc(100% - 16px);
+        background-color: var(--white-color);
+        border-radius: 2px;
+        box-shadow: 0 0 3px #666;
+        margin-top: 5px;
+        display: none;
+    }
+    
+    .header__search-history-list {
+        list-style-type: none;
+        margin: 0;
+        padding-left: 0;
+    }
+    
+    .header__search_history-item {
+        height: 38px;
+        padding: 0px 12px;
+    }
+    
+    .header__search_history-item:hover {
+        background-color: #fafafa;
+    }
+    
+    .header__search_history-item a {
+        text-decoration: none;
+        padding-left: 0;
+        font-size: 1.4rem;
+        color: var(--text-color);
+        line-height: 38px;
+        width: 100%;
+    }
+    
+    .header__search_history-item :last-child {
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+    }
+    
+    .header__search-history-heading {
+        margin: 4px 12px;
+        font-size: 1.4rem;
+        color: #999;
+        font-weight: 400;
     }
