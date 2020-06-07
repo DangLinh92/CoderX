@@ -36,6 +36,18 @@ html {
     flex-wrap: wrap;
 }
 
+.grid__column-2 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 16.6667%;
+}
+
+.grid__column-10 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 83.3333%;
+}
+
 
 /* animation */
 
@@ -78,7 +90,7 @@ html {
 /* button style */
 
 .btn {
-    min-width: 142px;
+    min-width: 124px;
     height: 36px;
     border: none;
     border-radius: 2px;
