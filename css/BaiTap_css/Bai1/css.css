@@ -1,0 +1,42 @@
+.content {
+    width: 200px;
+    height: 80px;
+    background-color: #fff;
+    border-radius: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px 0 0 20px;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0 6px 15px #ccc;
+}
+
+.content .img_content {
+    list-style: none;
+    display: flex;
+    justify-content: left;
+    padding-left: 0;
+    margin: 10px 0 0 0;
+}
+
+h5 {
+    margin: 0;
+    color: #636060;
+    font-size: 17px;
+}
+
+p {
+    font-size: 10px;
+    margin: 2px 0 0 0;
+    color: #9797a2;
+}
+
+.img_content_item {
+    margin-right: 5px;
+}
+
+.img_item {
+    width: 15px;
+    height: 15px;
+    border-radius: 5px;
+    padding: 0;
+    margin: 0;
+}
