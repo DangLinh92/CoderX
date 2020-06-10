@@ -1,0 +1,79 @@
+.main {
+    font-family: 'Roboto', sans-serif;
+    width: 675px;
+    height: 610px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 10px 10px #333;
+}
+
+.content {
+    width: 620px;
+    height: 610px;
+}
+
+.header {
+    border-bottom: 2px dotted #e8e8e8;
+    margin-bottom: 10px;
+}
+
+.header_text {
+    font-size: 24px;
+    margin: 10px 0 16px 0;
+    font-weight: 600;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    width: 620px;
+    height: 110px;
+    justify-content: space-evenly;
+    border: 2px solid #e8e8e8;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.item_avatar {
+    width: 120px;
+    display: flex;
+    justify-content: center;
+}
+
+.avatar {
+    width: 77px;
+    height: 77px;
+    border-radius: 50px;
+    background-image: url(https://i.picsum.photos/id/721/200/300.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.item_info {
+    flex-grow: 1;
+}
+
+.info_header {
+    font-size: 24px;
+    font-weight: 600;
+    color: #373737;
+    margin: 0;
+}
+
+.info_mail {
+    font-size: 18px;
+    font-weight: 300;
+    margin: 0;
+}
+
+.item_delete {
+    width: 77px;
+    height: 110px;
+    display: flex;
+    align-items: center;
+}
+
+.item_delete_icon {
+    color: #FABEC1;
+    font-size: 36px;
+}
