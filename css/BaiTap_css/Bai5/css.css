@@ -1,0 +1,113 @@
+body {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: #f5f9ff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main {
+    width: 732px;
+    height: 556px;
+    border: 1px solid #ebebeb;
+    border-radius: 2px;
+    box-shadow: 0 1px #ccc;
+    background-color: #fff;
+}
+
+.header {
+    display: flex;
+    border-bottom: 1px solid #ebebeb;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_text {
+    font-size: 24px;
+    font-weight: 700;
+    color: #505e6a;
+    margin-left: 40px;
+}
+
+.header_icon {
+    font-size: 24px;
+    font-weight: 700;
+    color: #505e6a;
+    margin-right: 32px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.cart_type {
+    width: 100%;
+    display: flex;
+}
+
+.holder_name {
+    width: 100%;
+}
+
+.visa_cart {
+    width: 106px;
+    height: 66px;
+    border: 1px solid #A6D9FF;
+    margin: 20px 0px 10px 40px;
+    text-align: center;
+    position: relative;
+}
+
+.visa_icon {
+    font-size: 50px;
+    position: absolute;
+    top: 10%;
+    right: 23%;
+}
+
+.holder_name {
+    margin-left: 40px;
+    font-weight: 700;
+    color: #505e6a;
+}
+
+.holder_name_input {
+    width: 88%;
+    height: 50px;
+    outline: none;
+    border: 1px solid #A6D9FF;
+}
+
+.cart_info {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card_item_header {
+    font-weight: 700;
+    color: #505e6a;
+}
+
+.card_input {
+    width: 88%;
+    height: 50px;
+    outline: none;
+    border: 1px solid #A6D9FF;
+}
+
+.content_info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin-left: 40px;
+}
+
+.content_info_text {
+    font-weight: 700;
+    color: #505e6a;
+    padding-left: 10px;
+}
