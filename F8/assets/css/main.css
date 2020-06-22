@@ -434,6 +434,7 @@ HEADER NOTIFICATION
         display: none;
         animation: fadeIn linear 0.1s;
         cursor: default;
+        z-index: 1;
     }
     
     .header__cart-list::after {
@@ -609,6 +610,7 @@ HEADER NOTIFICATION
         box-shadow: 0 0 3px #666;
         margin-top: 5px;
         display: none;
+        z-index: 1;
     }
     
     .header__search-history-list {
@@ -806,11 +808,11 @@ HEADER NOTIFICATION
     /* Home sort and filter */
     
     .home-filter {
-        position: relative;
         background-color: rgba(0, 0, 0, 0.04);
         display: flex;
         align-items: center;
         border-radius: 2px;
+        padding: 12px 22px;
     }
     
     .home-filter__label {
@@ -827,13 +829,75 @@ HEADER NOTIFICATION
     .home-filter__page {
         display: flex;
         justify-content: center;
+        margin-left: auto;
     }
     
-    .select-input__list {
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 100%;
-        border-radius: 2px;
+    .home-filter__page-num {
+        font-size: 1.4rem;
+        color: var(--text-color);
+        margin-right: 22px;
+    }
+    
+    .home-filter__page-current {
+        color: var(--primary-color);
+        font-size: 1.5rem;
+    }
+    
+    .home-filter__page-btn {
+        flex: 1;
         background-color: var(--white-color);
+        text-decoration: none;
+        display: flex;
+    }
+    
+    .home-filter__page-control {
+        border-radius: 2px;
+        display: flex;
+        width: 72px;
+        height: 36px;
+        overflow: hidden;
+    }
+    
+    .home-filter__page-icon {
+        margin: auto;
+        font-size: 1.4rem;
+        color: #555;
+    }
+    
+    .home-filter__page-btn--disable {
+        background-color: #f9f9f9;
+        cursor: default;
+        border-right: 1px solid #e6dfdf;
+    }
+    
+    .home-filter__page-btn--disable .home-filter__page-icon {
+        color: #ccc;
+    }
+    /* Product list */
+    
+    .home-product-item {
+        background-color: var(--white-color);
+        margin-top: 10px;
+    }
+    
+    .home-product-item__img {
+        padding-top: 100%;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    .home-product-item__name {
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: var(--text-color);
+        line-height: 1.8rem;
+        margin: 10px;
+        height: 3.6rem;
+        overflow: hidden;
+        display: block;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        text-overflow: ellipsis;
     }
