@@ -250,6 +250,10 @@ HEADER NOTIFICATION
     }
     /* Model */
     
+    .modal {
+        display: none;
+    }
+    
     .modal__body {
         --growth-from: 0.7;
         --growth-to: 1;
@@ -851,15 +855,15 @@ color: var(--primary-color);
         list-style-type: none;
     }
     
-    .category-item{
+    .category-item {
         position: relative;
     }
-
-    .category-item:first-child::before{
+    
+    .category-item:first-child::before {
         display: none;
     }
-
-    .category-item::before{
+    
+    .category-item::before {
         content: "";
         border-top: 1px solid #e1e1e1;
         position: absolute;
@@ -867,7 +871,7 @@ color: var(--primary-color);
         left: 20px;
         right: 20px;
     }
-
+    
     .category-item__active .category-item__link {
         color: var(--primary-color);
     }
@@ -1133,81 +1137,83 @@ color: var(--primary-color);
         border-style: solid;
         border-color: transparent rgb(255, 216, 64, .95);
     }
-
-    .home-product-pagination{
+    
+    .home-product-pagination {
         margin: 48px 0 32px 0;
     }
-/* FOOTER */
-    .footer{
+    /* FOOTER */
+    
+    .footer {
         border-top: 4px solid var(--primary-color);
         padding-top: 12px;
         background-color: var(--white-color);
     }
-
-    .footer__heading{
+    
+    .footer__heading {
         font-size: 1.4rem;
         text-transform: uppercase;
-        color:var(--text-color);
+        color: var(--text-color);
     }
-
-    .footer-list{
+    
+    .footer-list {
         padding-left: 0;
         list-style: none;
     }
-
-    .footer-item__link{
+    
+    .footer-item__link {
         text-decoration: none;
         font-size: 1.2rem;
-        columns: #737373;;
+        columns: #737373;
+        ;
         padding: 2px 0;
         display: flex;
         align-items: center;
+        color: var(--text-color);
     }
-
-    .footer-item__link:hover{
-        color:var(--primary-color);
+    
+    .footer-item__link:hover {
+        color: var(--primary-color);
     }
-
-    .footer-item__icon{
+    
+    .footer-item__icon {
         font-size: 1.6rem;
         margin: -1px 8px 0 0;
     }
-
-    .footer__download{
+    
+    .footer__download {
         display: flex;
     }
-
-    .footer__download-qr{
+    
+    .footer__download-qr {
         width: 80px;
         height: 80px;
         border: 1px solid var(--border-color);
     }
-
-    .footer__download-apps{
+    
+    .footer__download-apps {
         margin-left: 16px;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-
-    .footer__download-app-img{
+    
+    .footer__download-app-img {
         height: 16px;
-
     }
-
-    .footer__download-app-link{
+    
+    .footer__download-app-link {
         color: transparent;
         text-decoration: none;
     }
-
-    .footer_bottom{
+    
+    .footer_bottom {
         background-color: #f5f5f5;
         padding: 8px 0;
         text-align: center;
         margin-top: 36px;
     }
-
-    .footer__text{
+    
+    .footer__text {
         margin: 0;
         font-size: 1.4rem;
         color: var(--text-color);
