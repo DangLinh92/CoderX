@@ -1,0 +1,75 @@
+*{
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    background: transparent;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f1f1f1;
+    margin-top: 2rem;
+}
+
+.main{
+    width: 400px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.task_header{
+    display: flex;
+    height: 53px;
+}
+
+.task_header_input{
+    font-size: 1.1rem;
+    color: #fff;
+    background-color: #313e50;
+    padding: 14px;
+    flex: 1;
+}
+
+.task_header_btnAdd{
+    width: 55px;
+    background-color: #1dd2af;
+    color: #fff;
+    font-size: 1.1rem;
+    border-left: 1px solid #1eddb8;
+}
+
+.task_body{
+    background-color: #fff;
+    max-height: 500px;
+}
+
+.tasks{
+    list-style-type: none;
+}
+
+.task_item{
+    display: inline-flex;
+    padding: 14px;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    justify-content: center;
+}
+
+.tasks li:last-child{
+    border-bottom: none;
+}
+
+.task_item--delete{
+    color: rgba(0, 0, 0, 0.1);
+}
+
+.task_item_name{
+    display: block;
+    flex: 1;
+    padding: 0 8px;
+}
+
+.task_item--checked{
+    margin-top: 2px;
+}
