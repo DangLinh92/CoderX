@@ -1,4 +1,4 @@
-*{
+* {
     border: none;
     padding: 0;
     margin: 0;
@@ -7,23 +7,23 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: #f1f1f1;
     margin-top: 2rem;
 }
 
-.main{
+.main {
     width: 400px;
     max-width: 400px;
     margin: 0 auto;
 }
 
-.task_header{
+.task_header {
     display: flex;
     height: 53px;
 }
 
-.task_header_input{
+.task_header_input {
     font-size: 1.1rem;
     color: #fff;
     background-color: #313e50;
@@ -31,7 +31,7 @@ body{
     flex: 1;
 }
 
-.task_header_btnAdd{
+.task_header_btnAdd {
     width: 55px;
     background-color: #1dd2af;
     color: #fff;
@@ -39,16 +39,16 @@ body{
     border-left: 1px solid #1eddb8;
 }
 
-.task_body{
+.task_body {
     background-color: #fff;
     max-height: 500px;
 }
 
-.tasks{
+.tasks {
     list-style-type: none;
 }
 
-.task_item{
+.task_item {
     display: inline-flex;
     padding: 14px;
     width: 100%;
@@ -56,20 +56,26 @@ body{
     justify-content: center;
 }
 
-.tasks li:last-child{
+.task_item:hover .task_item--delete {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tasks li:last-child {
     border-bottom: none;
 }
 
-.task_item--delete{
+.task_item--delete {
     color: rgba(0, 0, 0, 0.1);
+    display: none;
 }
 
-.task_item_name{
+.task_item_name {
     display: block;
     flex: 1;
     padding: 0 8px;
 }
 
-.task_item--checked{
+.task_item--checked {
     margin-top: 2px;
 }
