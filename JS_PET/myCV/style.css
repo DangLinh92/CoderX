@@ -1,0 +1,27 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f1f1f1;
+    color: #000;
+    margin: 0;
+}
+
+.content_left {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.avatar_img {
+    background-image: url('https://www.w3schools.com/w3images/avatar_hat.jpg');
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.user_name {
+    font-size: 1.8rem;
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+}

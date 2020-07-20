@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="site.css" type="text/css">
+    <title>Document</title>
+
+    <style>
+        h1 {
+            font-size: 3em;
+            margin-top: 0.5em;
+        }
+        
+        .banner {
+            max-width: 100%;
+        }
+        
+        .sub-title {
+            background-color: #fff;
+            font-size: 1.5em;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="pies.html">Pies</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <aside>
+            <img src="images/logo.png" alt="my shop">
+        </aside>
+        <article>
+            <section class="columns-desktop">
+                <div class="pie">
+                    <img src="images/apple-pie.png" alt="">
+                    <div class="columns">
+                        <div class="title">Apple Pie</div>
+                        <div class="price">$12.8</div>
+                    </div>
+                    <p class="desc">Our famous apple pie</p>
+                    <button data-order="apple-pie">Order</button>
+                </div>
+
+                <div class="pie">
+                    <img src="images/apple-pie.png" alt="">
+                    <div class="columns">
+                        <div class="title">Apple Pie</div>
+                        <div class="price">$12.8</div>
+                    </div>
+                    <p class="desc">Our famous apple pie</p>
+                    <button data-order="apple-pie">Order</button>
+                </div>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <nav>
+            <ul><a href="/">Home</a></ul>
+            <ul>
+                <a href="pies.html">Pies</a>
+            </ul>
+            <ul>
+                <a href="contact.html">Contact</a>
+            </ul>
+        </nav>
+    </footer>
+
+    <script>
+        window.addEventListener("DOMContentLoaded", function(e) {
+            const orderButton = document.querySelectorAll("button[data-order]");
+            orderButton.forEach(function(button) {
+                button.addEventListener("click", function(e) {
+                    const button = e.currentTarget;
+                    const container = button.parentNode;
+                    const order = {
+                        id: button.getAttribute("data-order"),
+                        title: container.querySelector(".title").innerText,
+                        price: container.querySelector(".price").innerText,
+                        desc: container.querySelector(".desc").innerText
+                    };
+
+                    localStorage.setItem("order", JSON.stringify(order));
+                    const url = window.location.href.replace("pies.html", "order.html");
+                    window.location.href = url;
+                });
+            });
+
+        });
+    </script>
+</body>
+
+</html>
