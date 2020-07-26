@@ -1,0 +1,6 @@
+h3 Add new book
+form(action="/books/new", method="post")
+    input(type='text', placeholder='enter the name',name="name",text="{book.name}")
+    input(type='text', placeholder='enter the description',name="des",text="{book.description}")
+    input(type="hidden", name="id",text="{book.id}")
+    button(type="submit") Submit

@@ -1,0 +1,7 @@
+a(href='books/new') New &nbsp;
+ul
+  each book in books
+    li= book.name
+        a(href='books/edit/' + book.id) Edit
+        a(href='books/delete/' + book.id) Delete
+        

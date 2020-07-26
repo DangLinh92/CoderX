@@ -1,0 +1,5 @@
+h3 Update new book
+form(action="/books/edit", method="post")
+    input(type='text', placeholder='enter the name',name="name",value=book.name)
+    input(type="hidden", name="id",value=book.id)
+    button(type="submit") Submit
