@@ -1,0 +1,5 @@
+h3 Update new user
+form(action="/users/edit", method="post")
+    input(type='text', placeholder='enter the name',name="name",value=user.name)
+    input(type="hidden", name="id",value=user.id)
+    button(type="submit") Submit
