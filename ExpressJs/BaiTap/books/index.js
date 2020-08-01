@@ -8,12 +8,14 @@ const userRouter = require('./routers/user.router');
 const bookRouter = require('./routers/book.router');
 const transactionRouter = require('./routers/transactions.router');
 
+app.use(express.static('public'))
 app.use(morgan("short"));
 
 app.set('view engine', 'pug');
 app.set('views', './views');
 
-var bodyParser = require('body-parser')
+var bodyParser = require('body-parser');
+const { static } = require('express');
 app.use(bodyParser.json()); // to support JSON-encoded bodies
 app.use(bodyParser.urlencoded({ // to support URL-encoded bodies
     extended: true
