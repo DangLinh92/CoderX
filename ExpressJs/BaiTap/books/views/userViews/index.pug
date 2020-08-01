@@ -1,6 +1,9 @@
-a(href='users/new') New &nbsp;
-ul
-  each user in users
-    li= user.name
-        a(href='users/edit/' + user.id) Edit
-        a(href='users/delete/' + user.id) Delete
+extends ../menu
+
+block content
+  a(href='users/new') New &nbsp;
+  ul
+    each user in users
+      li= user.name
+          a(href='users/edit/' + user.id) Edit
+          a(href='users/delete/' + user.id) Delete

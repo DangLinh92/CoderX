@@ -20,7 +20,7 @@ app.use(bodyParser.urlencoded({ // to support URL-encoded bodies
 }));
 
 app.get('/', (req, res) => {
-    return res.send('Welcome to books admin!');
+    return res.render('menu')
 });
 
 // book region
