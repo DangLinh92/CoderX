@@ -2,7 +2,8 @@ extends ../menu
 
 block content
     h3 Add new user
-    .alert.alert-danger(role='alert')=error_text
+    if(error_text)
+        .alert.alert-danger(role='alert')=error_text
     form(action="/users/new", method="post")
         input(type='text', placeholder='enter the name',name="name",value=userName ? userName :'')
         button(type="submit") Submit

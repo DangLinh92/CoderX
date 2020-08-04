@@ -12,12 +12,8 @@ module.exports.new = (req, res) => {
 
 module.exports.postNew = (req, res) => {
     let id = shortid.generate();
-    let name = req.body.name;
-    if (name && name.length <= 10) {
-        db.get('users').push({ id: id, name: name }).write();
-        return res.redirect('/users');
-    }
-    return res.render('userViews/addUser', { userName: name, error_text: 'name is over max length' });
+    db.get('users').push({ id: id, name: name }).write();
+    return res.redirect('/users');
 }
 
 module.exports.edit = (req, res) => {
