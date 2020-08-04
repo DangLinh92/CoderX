@@ -45,13 +45,15 @@
       "name": "Lê Văn Đặng1--c# base1",
       "userId": "JrC5thuPx",
       "bookId": "xc_yLXweO",
-      "id": "P282fYjS8"
+      "id": "P282fYjS8",
+      "isComplete": "true"
     },
     {
       "name": "Lê Văn Đặng123--English book",
       "userId": "sIAxMCBbE",
       "bookId": "kRiodj-AR",
-      "id": "_PW7D3xHL"
+      "id": "_PW7D3xHL",
+      "isComplete": "true"
     },
     {
       "name": "Lê Văn Đặng1--c# base1",

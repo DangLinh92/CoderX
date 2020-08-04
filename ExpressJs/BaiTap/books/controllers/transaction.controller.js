@@ -1,8 +1,10 @@
 const shortid = require('shortid');
 const db = require('../db');
+const { render } = require('pug');
 
 module.exports.index = (req, res) => {
     let transactions = db.get('transactions').value();
+    console.log('aaaa');
     return res.render('transaction', { transactions: transactions });
 }
 
@@ -25,6 +27,12 @@ module.exports.postCreate = (req, res) => {
 
 module.exports.complete = (req, res) => {
     let id = req.params.id;
-    let transaction = db.get('transactions').find({ id: id }).assign({ isComplete: 'true' }).write();
+    let obj = db.get('transactions').find({ id: id }).value();
+    if (obj) {
+        let transaction = obj.assign({ isComplete: 'true' }).write();
+    } else {
+        let transactions = db.get('transactions').value();
+        return res.render('transaction', { transactions: transactions, error_text: 'not found transaction!' });
+    }
     return res.redirect('/transactions');
 }

@@ -1,6 +1,10 @@
-a(href='transactions/create') New &nbsp;
-ul
-  each tr in transactions
-    li= tr.name 
-        if tr.isComplete !== 'true'
-           a(href='/transactions/'+tr.id+'/complete') Complete
+extends ./layouts/common
+
+block content
+   .alert.alert-danger(role='alert')=error_text
+   a(href='transactions/create') New &nbsp;
+    ul
+      each tr in transactions
+        li= tr.name 
+           if tr.isComplete !== 'true'
+             a(href='/transactions/'+tr.id+'/complete') Complete
