@@ -3,6 +3,7 @@ const db = require('../db');
 
 module.exports.index = (req, res) => {
     var users = db.get('users').value();
+    res.cookie('access_token', 'Bearer abcdef');
     return res.render('userViews/index', { users: users });
 }
 

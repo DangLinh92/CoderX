@@ -3,13 +3,24 @@ const app = new express();
 const port = 3000;
 const morgan = require('morgan');
 const db = require('./db');
+var cookieParser = require('cookie-parser');
 
 const userRouter = require('./routers/user.router');
 const bookRouter = require('./routers/book.router');
 const transactionRouter = require('./routers/transactions.router');
 
-app.use(express.static('public'))
+var numberCookie = 0;
+app.use(cookieParser());
+app.use(express.static('public'));
 app.use(morgan("short"));
+app.use((req, res, next) => {
+    if (req.cookies) {
+        numberCookie++;
+        console.log(`cookies: ${numberCookie}`);
+    };
+
+    next();
+});
 
 app.set('view engine', 'pug');
 app.set('views', './views');
