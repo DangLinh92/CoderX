@@ -1,5 +1,3 @@
-const shortid = require('shortid');
-
 module.exports.postCreate = function(req, res, next) {
     let name = req.body.name;
     if (name.length >= 10) {
