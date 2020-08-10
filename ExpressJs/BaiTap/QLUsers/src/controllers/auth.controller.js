@@ -28,8 +28,10 @@ module.exports.postLogin = (req, res) => {
                 res.locals.userName = userDb.name;
                 RetryCount = 0;
                 return res.render('home', { users: db.get('users').value() });
+            } else {
+                return res.render('login');
             }
         });
     }
-    return res.render('login');
+    //return res.render('login');
 };

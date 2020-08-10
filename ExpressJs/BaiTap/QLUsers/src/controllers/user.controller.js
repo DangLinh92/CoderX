@@ -1,3 +1,5 @@
+require('dotenv').config();
+const sgMail = require('@sendgrid/mail');
 const shortid = require('shortid');
 const db = require('../lowdb');
 const bcrypt = require('bcrypt');
@@ -27,8 +29,37 @@ module.exports.postNew = (req, res) => {
                     })
                     .write();
 
+                sendMail(
+                    user.email,
+                    'admin@gmail.com',
+                    'MAIL:',
+                    'Create user success!',
+                    '',
+                );
                 return res.redirect('/users/list');
             });
         });
     }
 };
+
+function sendMail(to, from, subject, text, html) {
+    sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+    const msg = {
+        to: to,
+        from: from, // Use the email address or domain you verified above
+        subject: subject,
+        text: text,
+        html: html,
+    };
+
+    sgMail.send(msg).then(
+        () => {},
+        (error) => {
+            console.error(error);
+
+            if (error.response) {
+                console.error(error.response.body);
+            }
+        },
+    );
+}

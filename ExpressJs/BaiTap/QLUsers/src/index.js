@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const handlebars = require('express-handlebars');
 const morgan = require('morgan');
@@ -12,7 +13,7 @@ const authValidate = require('./validate/auth.validate');
 const app = new express();
 const port = 3000;
 
-app.use(cookieParser('secretKey'));
+app.use(cookieParser(process.env.SECRET_KEY));
 
 // template engine
 app.engine('handlebars', handlebars());
@@ -30,7 +31,8 @@ app.get('/', (req, res) => {
     return res.render('login');
 });
 
-app.use('/users', authValidate.AuthLogin, userRouter);
+//app.use('/users', authValidate.AuthLogin, userRouter);
+app.use('/users', userRouter);
 app.use('/auth', authRouter);
 
 app.listen(port, () => {

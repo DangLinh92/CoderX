@@ -39,6 +39,30 @@
       "email": "hoamoclan.3192@gmail.com",
       "password": "123456789",
       "phone": "0974628108"
+    },
+    {
+      "order": 6,
+      "id": "H_9F2BbhR",
+      "name": "Admin",
+      "email": "danglevan.9919@gmail.com",
+      "password": "$2b$10$H1aAYCUMMK5iOTNsnfsRMeNAkIkZsPthWDQlt5gSftGBxqqzhI8r.",
+      "phone": "0974628108"
+    },
+    {
+      "order": 7,
+      "id": "XiCzIgavd",
+      "name": "Admin1",
+      "email": "danglevan123.9919@gmail.com",
+      "password": "$2b$10$Gr2qKGds8yc8Z3sCRbWLFuNJyUoS01TBV209Bp6zypE1wWN4fb.RG",
+      "phone": "0974628108"
+    },
+    {
+      "order": 8,
+      "id": "4Wbhf04F6",
+      "name": "admin",
+      "email": "dang.levan123@vti.com.vn",
+      "password": "$2b$10$S3/YxTvDdXOIvmp0pAA9MezhKVkw.3UoAIMi7gfcKTGsF6nyR1ism",
+      "phone": "0974628108"
     }
   ]
 }
