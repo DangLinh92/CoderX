@@ -1,8 +1,8 @@
-{{#each messageErr}}
+{{#if messageErr}}
     <div class="alert alert-danger" role="alert">
-        {{{this}}}
+        {{{messageErr}}}
     </div>
-{{/each}}
+{{/if}}
 <form action="/auth/login" method="POST">
     <div class="form-group">
         <label for="exampleInputEmail1">Email address</label>
