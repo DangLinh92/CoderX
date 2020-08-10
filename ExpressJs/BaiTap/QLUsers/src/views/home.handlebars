@@ -1,0 +1,30 @@
+<div class="content">
+    {{#if userName}}
+        <p>Login: {{userName}}</p>
+    {{/if}}
+    <a class="btn btn-primary" href="/users/new" role="button">New</a>
+    <table class="table table_content">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Password</th>
+                <th scope="col">Phone</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each users}}
+            <tr>
+                <th scope="row">{{{order}}}</th>
+                <td>{{{name}}}</td>
+                <td>{{{email}}}</td>
+                <td>{{{password}}}</td>
+                <td>{{{phone}}}</td>
+                <td>-</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>
