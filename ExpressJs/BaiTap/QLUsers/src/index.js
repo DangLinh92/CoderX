@@ -31,8 +31,7 @@ app.get('/', (req, res) => {
     return res.render('login');
 });
 
-//app.use('/users', authValidate.AuthLogin, userRouter);
-app.use('/users', userRouter);
+app.use('/users', authValidate.AuthLogin, userRouter);
 app.use('/auth', authRouter);
 
 app.listen(port, () => {
