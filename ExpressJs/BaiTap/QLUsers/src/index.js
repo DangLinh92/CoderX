@@ -7,6 +7,7 @@ const bodyParser = require('body-parser');
 const db = require('./lowdb');
 const userRouter = require('./routers/user.router');
 const authRouter = require('./routers/auth.router');
+const productRouter = require('./routers/product.router');
 const cookieParser = require('cookie-parser');
 const authValidate = require('./validate/auth.validate');
 
@@ -31,8 +32,9 @@ app.get('/', (req, res) => {
     return res.render('login');
 });
 
-app.use('/users', authValidate.AuthLogin, userRouter);
+app.use('/users', userRouter); // authValidate.AuthLogin
 app.use('/auth', authRouter);
+app.use('/products', productRouter);
 
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`);

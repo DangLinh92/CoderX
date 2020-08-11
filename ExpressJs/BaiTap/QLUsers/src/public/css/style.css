@@ -15,3 +15,10 @@ body {
 .btn {
     margin: 5px;
 }
+
+.main_product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 20px 0px;
+}
