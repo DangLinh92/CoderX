@@ -63,6 +63,187 @@
       "email": "dang.levan123@vti.com.vn",
       "password": "$2b$10$S3/YxTvDdXOIvmp0pAA9MezhKVkw.3UoAIMi7gfcKTGsF6nyR1ism",
       "phone": "0974628108"
+    },
+    {
+      "order": 9,
+      "id": "cPz77_fe6",
+      "name": "mrDang",
+      "email": "hoamoclan.3192@gmail.com",
+      "password": "$2b$10$UtpH9IxxZEjKCGf1FZE0ouVGcB.wcrwFKI0PkLYkE0G/MvD3ulFcC",
+      "phone": "0974628108",
+      "avatar": ""
+    },
+    {
+      "order": 10,
+      "id": "HwUNCLBRM",
+      "name": "Danglv",
+      "email": "Nguyenthulinh152@gmail.com",
+      "password": "$2b$10$7N3Prv2Cn6pSfO6/aM3oG.jdOfkwkKl91mmsXt/hrszjIE7aBT2j.",
+      "phone": "0974628108",
+      "avatar": "uploads\\049fc5ad90a03f0f764f6adfb59b371a"
+    },
+    {
+      "order": 11,
+      "id": "gJtEWNYv4",
+      "name": "mrDang",
+      "email": "dang.levan@vti.com.vn",
+      "password": "$2b$10$sff3syY//MCCQzdO1enZ3.VkMwR7bxHqMz43nKdjetQWJA9yyToWW",
+      "phone": "0974628108",
+      "avatar": "uploads\\63341eee26e9cf5368a34530ad45ea19"
+    },
+    {
+      "order": 12,
+      "id": "NqYvoY0YL",
+      "name": "Admin",
+      "email": "danglevan.9919@gmail.com",
+      "password": "$2b$10$kYUIXu/LwFhlm1K11ATgo..EQ5txBxEGn.TWJxwZSeTGNnOX6fJNe",
+      "phone": "0974628108",
+      "avatar": "uploads\\bf3e06fcb4a43045391099dcfe67e85b"
+    },
+    {
+      "order": 12,
+      "id": "HO8jtlPJC",
+      "name": "Admin",
+      "email": "danglevan.9919@gmail.com",
+      "password": "$2b$10$AAPqkrYr418f06i5ha7g9.LGDkXDxoqAcz2oVRMNR/1mmuT4.UkXW",
+      "phone": "0974628108",
+      "avatar": "uploads\\f411e3fd06bef72ae208e5f8cb5f03e6"
+    },
+    {
+      "order": 13,
+      "id": "XI-cM1QW_",
+      "name": "mrsLinh",
+      "email": "hoamoclan_3192@yahoo.com.vn",
+      "password": "$2b$10$b7PtElW7exum6FA/RWhTHey8Bur5ZcWbqtJvmJ7lEpb36t46q4viG",
+      "phone": "0974628108",
+      "avatar": "public\\uploads\\8f18817fd75b9cf7d2216ddb686fe2eb"
+    },
+    {
+      "order": 14,
+      "id": "nKqsKd_xp",
+      "name": "MA",
+      "email": "danglevan.9919@gmail.com",
+      "password": "$2b$10$eWS1eKRxkKEAZkDOHbZJReS0Yv73hd8pJGdUsWYyVXhrI11CRmTim",
+      "phone": "0974628108",
+      "avatar": "..\\public\\uploads\\5080211629d84446137076eab52e9f42"
+    },
+    {
+      "order": 15,
+      "id": "VNPIIgqCI",
+      "name": "mrA",
+      "email": "danglevan.9919@gmail.com",
+      "password": "$2b$10$IYJnQdEVxGYCsI1p7WzUbu769aNkrK7JwQMnBL/HHe6lEaT6U2xR6",
+      "phone": "0974628108",
+      "avatar": "..\\public\\uploads\\031004e9b8661fa121d9b4ea4f999da0"
+    },
+    {
+      "order": 16,
+      "id": "BexW3O3ad",
+      "name": "mr dang123",
+      "email": "dang.levan@vti.com.vn",
+      "password": "$2b$10$uBGRzUDNl5EsIREB.3jRg.BL/ONOPc7Q54FN1hTuxbzzaOEaEDqEa",
+      "phone": "0974628108",
+      "avatar": "..\\public\\css\\9723c8d0d051b06e79a83dc03274aa37"
+    },
+    {
+      "order": 17,
+      "id": "VM1recWhh",
+      "name": "Danglv12",
+      "email": "dang.levan@vti.com.vn",
+      "password": "$2b$10$b9Vavx7x.8y39ITvpSRZheDv0veI/XOmUzhledkX3gUBfNOB3wNkS",
+      "phone": "0974628108",
+      "avatar": "public\\css\\8cc548f4d744c51f6b6ed2cccdc78cdf"
+    },
+    {
+      "order": 18,
+      "id": "ETLtidq4J",
+      "name": "Ma",
+      "email": "danglevan.9919@gmail.com",
+      "password": "$2b$10$LxKqf6Jx5W74ZrJn0d3IweO73/MfUJrzcpNpVkIcstj6REySBO6AG",
+      "phone": "0974628108",
+      "avatar": "E:\\Git-Responsitory\\CoderX\\ExpressJs\\BaiTap\\QLUsers\\src\\public\\uploads\\1c61893da3fd19620ea03c92d97b36be"
+    },
+    {
+      "order": 19,
+      "id": "XrqnUwQxe",
+      "name": "Ma",
+      "email": "danglevan.9919@gmail.com",
+      "password": "$2b$10$lSSSpdyn2H9C8HhsG6vZ.uJLs83P4GgD0Lmxm4491RgRLBETeRBwC",
+      "phone": "0974628108",
+      "avatar": "/uploads/aee936b36d5fbf322b12d8dd538f78eb"
+    },
+    {
+      "order": 20,
+      "id": "RYY5lzqDo",
+      "name": "mr dang1",
+      "email": "danglevan.9919@gmail.com",
+      "password": "$2b$10$cXJnN0awrWv5nt9uBRCL6epb4yMAmYtCiL/TpWlOt6dxNNtPn6hjK",
+      "phone": "0974628108",
+      "avatar": "src\\public\\uploads\\4625fea29ae4a1acf0ece4d3568dfe67"
+    },
+    {
+      "order": 21,
+      "id": "BDiQpE_b1",
+      "name": "mr dang1",
+      "email": "danglevan.9919@gmail.com",
+      "password": "$2b$10$gy/NOyc1D4JMJ.tkqVgRNu3X0ca1cg0ewBZ.ltwy.Jv88A1sgvjOy",
+      "phone": "0974628108",
+      "avatar": "src\\public\\uploads\\b42da4b58b9962e1a447fe04d638b196"
+    },
+    {
+      "order": 22,
+      "id": "gv6Qlfd-S",
+      "name": "mr dang",
+      "email": "Nguyenthulinh152@gmail.com",
+      "password": "$2b$10$R4Mi37tYgj8/9VzDGbIrAuLpcl2tk511z/9mdWFItY19D30cfEzmG",
+      "phone": "0974628108",
+      "avatar": "\\{path}"
+    },
+    {
+      "order": 23,
+      "id": "YOqqkZwY2",
+      "name": "Danglv",
+      "email": "danglevan.9919@gmail.com",
+      "password": "$2b$10$WZrgnkHf.GBmYD9VYKSyluWNQrqwkZWtIVJYt2L4RCSOejh9d1Hvy",
+      "phone": "0974628108",
+      "avatar": "/uploads/570eec3599bd80e68c33e2c5917bcc89"
+    },
+    {
+      "order": 24,
+      "id": "a-zsorX3-",
+      "name": "MrBean",
+      "email": "danglevan.9919@gmail.com",
+      "password": "$2b$10$ypQgD5dK.BxC2iIbvOR/YeJBjlFgqzpwBLiQTLv62hNTRnRG14Aai",
+      "phone": "0974628108",
+      "avatar": "/uploads/d7a4c09b78bd60091024f69b031f1435"
+    },
+    {
+      "order": 25,
+      "id": "FwsbsLWb4",
+      "name": "MrBean",
+      "email": "danglevan.9919@gmail.com",
+      "password": "$2b$10$7pyoMYIDCM/ZTrMP/G1.6eVTxyXmlXZCEp3m.SpPL7od3bu51ILM6",
+      "phone": "0974628108",
+      "avatar": "/uploads/44d13071df6104252e50130ee869a885"
+    },
+    {
+      "order": 26,
+      "id": "xhpGyLC9R",
+      "name": "mrB",
+      "email": "hoamoclan.3192@gmail.com",
+      "password": "$2b$10$YCr17cgtH7zlaFfYt9Fw6O1FKWmSf1L4VJdUJ5FHAXZprEmLDF4M2",
+      "phone": "0974628108",
+      "avatar": "/uploads/53393e22343e9de04e0e606654d008e4"
+    },
+    {
+      "order": 27,
+      "id": "O4y7WpBKx",
+      "name": "mrBA",
+      "email": "danglevan.9919@gmail.com",
+      "password": "$2b$10$hTomwyTSv3wjelSJEO9dl.fTBtjxE.wIs6bJfoD/srfjhTrg9vkKu",
+      "phone": "0974628108",
+      "avatar": "/uploads/b53673feaf0afd313b9df5b4d55aaf92",
+      "avatarUrl": "http://res.cloudinary.com/da1zpphp5/image/upload/v1597337064/nc2fdcp2ducpxa6hoqm3.jpg"
     }
   ],
   "products": [

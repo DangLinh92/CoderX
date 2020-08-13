@@ -32,7 +32,7 @@ app.get('/', (req, res) => {
     return res.render('login');
 });
 
-app.use('/users', userRouter); // authValidate.AuthLogin
+app.use('/users', authValidate.AuthLogin, userRouter); // authValidate.AuthLogin
 app.use('/auth', authRouter);
 app.use('/products', productRouter);
 
