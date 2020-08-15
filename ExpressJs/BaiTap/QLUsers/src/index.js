@@ -10,11 +10,13 @@ const authRouter = require('./routers/auth.router');
 const productRouter = require('./routers/product.router');
 const cookieParser = require('cookie-parser');
 const authValidate = require('./validate/auth.validate');
+const sessionMiddleware = require('./middlewares/session.middleware');
 
 const app = new express();
 const port = 3000;
 
 app.use(cookieParser(process.env.SECRET_KEY));
+app.use(sessionMiddleware);
 
 // template engine
 app.engine('handlebars', handlebars());
