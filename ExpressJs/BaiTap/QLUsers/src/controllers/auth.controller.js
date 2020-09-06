@@ -4,7 +4,7 @@ const saltRounds = 10;
 
 module.exports.getLogin = (req, res) => {
     res.clearCookie('userId');
-    return res.redirect('login');
+    return res.render('login');
 };
 
 var RetryCount = 0;

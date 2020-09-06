@@ -850,10 +850,21 @@
   ],
   "sessions": [
     {
-      "id": "W5H8bFmm-",
-      "cart": {
-        "Id_2": 1
-      }
+      "id": "ID9ETE_3l"
+    }
+  ],
+  "transfers": [
+    {
+      "_csrf": "DoKu8jzz-v4PH_tllkbV7j41nmXVyemUzd7c",
+      "account": "dang.levan",
+      "amount": 1000000,
+      "id": "aWAJuOfiM"
+    },
+    {
+      "_csrf": "p3EuayAv-a9pepvargSdkLovgtQdGVTjVg2c",
+      "account": "dang.levan1",
+      "amount": 2000000,
+      "id": "xgd6wcmRL"
     }
   ]
 }

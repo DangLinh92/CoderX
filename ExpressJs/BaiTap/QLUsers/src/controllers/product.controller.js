@@ -1,23 +1,38 @@
 const db = require('../lowdb');
-module.exports.getProductByPage = (req, res) => {
-    var products = db.get('products').value();
-    var page = req.query.page || 1;
-    var begin = (page - 1) * 20;
-    var end = page * 20;
+const Product = require('../models/Product');
+const Session = require('../models/Session');
 
-    var productInPage = products.slice(begin, end);
+module.exports.getProductByPage = async (req, res) => {
+    try {
+        var products = await Product.find({}); //db.get('products').value();
 
-    var sessionId = req.signedCookies.sessionId;
-    var cards = db.get('sessions').find({ id: sessionId }).get('cart').value();
-    var cardsArr = [];
-    for (const key in cards) {
-        if (cards.hasOwnProperty(key)) {
-            const count = cards[key];
-            cardsArr.push({ id: key, count: count });
+        var page = req.query.page || 1;
+        var begin = (page - 1) * 20;
+        var end = page * 20;
+
+        var productInPage = products.slice(begin, end);
+
+        var sessionId = req.signedCookies.sessionId;
+        var cards = db
+            .get('sessions')
+            .find({ id: sessionId })
+            .get('cart')
+            .value();
+        var cardsArr = [];
+        for (const key in cards) {
+            if (cards.hasOwnProperty(key)) {
+                const count = cards[key];
+                cardsArr.push({ id: key, count: count });
+            }
         }
+        productInPage = productInPage.map((product) => product.toObject());
+        return res.render('product', {
+            products: productInPage,
+            cards: cardsArr,
+        });
+    } catch (error) {
+        return res.render('Error');
     }
-
-    return res.render('product', { products: productInPage, cards: cardsArr });
 };
 
 module.exports.addToCard = (req, res) => {
